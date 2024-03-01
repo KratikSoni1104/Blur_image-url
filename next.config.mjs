@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-// import withPlaiceholder from '@plaiceholder/next';
+import withPlaiceholder from '@plaiceholder/next';
 const nextConfig = {
     images: {
         // domains: ['*'], // Use wildcard to allow all domains
@@ -12,4 +12,4 @@ const nextConfig = {
     }
 };
 
-export default nextConfig;
+export default withPlaiceholder(nextConfig);
